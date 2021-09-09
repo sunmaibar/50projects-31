@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="image_src" href="./image.png" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADKrfgAtJzzAK2imgDW5PoAiXLaAPj1/wDZ5/oAoIH9APv6/ACZneUAtan2ADouhwDNuqsA0MD7AIFlZACBYNsAh17VALbD8wCqoOUA5/zxAM7JvQDHsvYAaEQ5AMey/wBoWH0A1eb4AHhWxwCAuO8A/f/xAO7m3QBcQxwA/f39AJNgOwD//f0AfFvfAHRXPAC5raEAk3HzAIJf2QDBrPcASUXDANLV/ADT6fAAlo/hAJqA8wCii9UAkHpcAI1y0wD5/u8A49r5AIBjTgBOJsEAmloqAK297AD9/PsA/v/7ALeupQCai7sAiGbLAJ6HaACWinoAXS7HAPX07QCAb4QAXTPNAJ6L6ACLaukAkYC/AObb/QD8/PwAxNT7AJFx4wD9//wAt6qaANLF+wCCbskAsJDuAJJ69QAkIJcAzt7+ANTb/gDfzpkAhnDPAHRTaAAVHIMAp4XyAP38/QD/+/oA/f76AJCx5gDo5PUA/f/9AL2p8QDOzP8AbmgzAJV26gBROGEAgVPuAO7o+ADVwbIArJfyAINSSwBvTuAAtKOHAL3S9wCJdCEAwNL3AIl7fQD7+/sAdl3XAPr8/gDE0/oAxcC5AH1a1wDj6fwAjmk/ALqs+wCgpuEAqZTqAH5j1wCTdPcAnIXrALmg4QD49PkAwsL+ANbm/QD6+fYA+vr5AJWe7gC3pP8A////AOTs/QCAV+oAq5juAJd87ACFZecAX0awAIVcPgC2o+sAlp/gAOvk3QDb6vgA/Pz3AJJm6gD//v0AYkrOAGM6KwCpleYAln/bAJqH2ACTnckANSF6ALnG+gCGX+gAm4LtAIpx3wC4p+YAtqD1AIFhTgBjPsYATD5BAPz9+wCiiPYA3un/AP7+/gB2VTQA1tHlAJJx8QCtifkAgGLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgjotk2EdjCNTVJIWoE4wJIImcagcDGllazKlnpcoSBSCV19VpDwLIClyUC5gXm4CglhHWqR6GA5vRks1iXM+f4KkhqZ+ols/apg5dTtncIKCpIcSlFY2lhGLKx5JYziCpKSVnzFoo41dBmZspKSkpKSkez0KGQVYpIOnoaSkpKQfpB8lfDQTfR9iLEWkpKSkpKSkdnkqdANRABchpKSkpKSkpEGbgC9PiJmPN6SkpKSkpAgEMw+pkXeFgZCCgoKCpKRsQJqceG2EIhWCgoKCgoKkpBpKXGQnDQcQgoKCgoKCpKRZTVKdQopDgoKCgoKCgoKkjgkbTAFEpKSkpKSkHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>密碼自動產生器</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>密碼自動產生器</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label>密碼長度</label>
+          <input type="number" id="length" min="4" max="20" value="20" />
+        </div>
+        <div class="setting">
+          <label>包含大寫</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="setting">
+          <label>包含小寫</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="setting">
+          <label>包含數字</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="setting">
+          <label>包含符號</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+      </div>
+      <button class="btn btn-large" id="generate">產生密碼</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
